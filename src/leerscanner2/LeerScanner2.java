@@ -25,9 +25,9 @@ public class LeerScanner2 {
        
        arc.close();
        System.out.println("EL archivo de salida ha sido"
-                + " creado: "+arc);
+                + " creado: "+nom);
        //leer archivo con scanner
-       String []datos=new String[3];
+       String []datos=new String[cot];
        int indiceVector=0;
        Scanner entrada;
        try{
@@ -39,7 +39,7 @@ public class LeerScanner2 {
        }catch(FileNotFoundException e){
        e.printStackTrace();
        }
-       for(int i=0;i<datos.length;i++){
+       for(int i=0;i<cot;i++){
            System.out.println(datos[i]);
        }
     }
